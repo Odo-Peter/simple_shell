@@ -8,7 +8,7 @@ This is the solution to the simple shell project for ALX low level programming l
   - [The requirements](#the-requirements)
     - [The challenge](#the-challenge)
     - [Authorized functions and macros](#authorized-functions-and-macros)
-    - [Functions and descriptions](#functions-and-descriptions
+    - [Functions and descriptions](#functions-and-descriptions)
     - [Compilation](#compilation)
     - [Testing](#testing)
   - [Our process](#our-process)
