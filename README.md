@@ -7,17 +7,17 @@ This is the solution to the simple shell project for ALX low level programming l
 - [Overview](#overview)
   - [The requirements](#the-requirements)
     - [The challenge](#the-challenge)
-    - [Authorized functions and macros](#authorized-functions-and-macros)
-    - [Functions and descriptions](#functions-and-descriptions)
-    - [Compilation](#compilation)
-    - [Testing](#testing)
-  - [Our process](#our-process)
-    - [Built with](#built-with)
-    - [What we learned](#what-we-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
-  - [Authors](#authors)
-  - [Acknowledgments](#acknowledgments)
+      - [Authorized functions and macros](#authorized-functions-and-macros)
+        - [Functions and descriptions](#functions-and-descriptions)
+	  - [Compilation](#compilation)
+	    - [Testing](#testing)
+	    - [Our process](#our-process)
+	      - [Built with](#built-with)
+	        - [What we learned](#what-we-learned)
+		  - [Continued development](#continued-development)
+		    - [Useful resources](#useful-resources)
+		    - [Authors](#authors)
+		    - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -42,20 +42,20 @@ The project was to achieve the following:
 
 - Write a simple UNIX command interpreter.
   - All files should pass betty linter test.
-  - Write a UNIX command line interpreter, the shell should do the following:
-    - Display a prompt and wait for a user to type a command.
-    - The prompt is displayed again each time a command has been executed.
-    - The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
-    - If an executable cannot be found, print an error message and display the prompt again.
-    - Handle errors.
-    - The "end of file" condition should be handled `ctrl+D`
-  - Handle command lines with arguments.
-  - Handle the `PATH`
-  - `fork` must not be called if the command doesn't exist.
-  - Implement the exit built-in, that exits the shell.
-    - Usage: `exit`
-    - Any argument to the built-in `exit` must not be handled.
-  - Implement the `env` built-in, that prints the current environment.
+    - Write a UNIX command line interpreter, the shell should do the following:
+        - Display a prompt and wait for a user to type a command.
+	    - The prompt is displayed again each time a command has been executed.
+	        - The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
+		    - If an executable cannot be found, print an error message and display the prompt again.
+		        - Handle errors.
+			    - The “end of file” condition should be handled `ctrl+D`
+			      - Handle command lines with arguments.
+			        - Handle the `PATH`
+				  - `fork` must not be called if the command doesn’t exist.
+				    - Implement the exit built-in, that exits the shell.
+				        - Usage: `exit`
+					    - Any argument to the built-in `exit` must not be handled.
+					      - Implement the `env` built-in, that prints the current environment.
 
 ### Authorized functions and macros
 
@@ -97,12 +97,17 @@ The authorized functions and macros:
 
 The several functions used to making the simple shell project in its entirety and their descriptions are thus:
 
-| Function   | Description                                        |
-| ---------- | -------------------------------------------------- |
-| shell_init | Prompts the user to enter a command (i.e (EdPe$ )) |
-| shell_exit | Exit the simple shell and returns to the terminal  |
+| Function          | Description                                                         |
+| ----------------- | ------------------------------------------------------------------- |
+| main              | The entry point of the main program                                 |
+| \_\_h_shell       | The main shell loop, in this function, the user is prompt for input |
+| \_\_find_builtins | A customizable function, that mocks the LINUX builtin commands      |
+| \_\_find_commands | This finds the mocked commands and run them appropraitely           |
+| \_\_fork_command  | This creates a child process and forks an execution thread          |
+| \_\_error_puts    | This writes an error message to the STDERR                          |
+| \_realloc         | This reallocate a block of memory                                   |
 
-**\*\***....... (This is just an overview, we will edit this part as the tasks progresses with the appropraite functions and descriptions) .......**\*\*\*\***
+Alot of functions was used to get the shell to work appropraitely
 
 ### Compilation
 
@@ -118,10 +123,10 @@ The interactive mode of the shell is expected to be thus:
 
 ```
 $ ./hsh
-(EdPe$ ) /bin/ls
+(Konichiwa :)$ ) /bin/ls
 hsh main.c shell.c
-(EdPe$ )
-(EdPe$ ) exit
+(Konichiwa :)$ )
+(Konichiwa :)$ ) exit
 $
 ```
 
@@ -149,7 +154,7 @@ The simple shell project, was built with C language.
 
 ### What we learned
 
-**\*\***....... What we both learned in the course of the tasks goes here, we will keep updating (this part individually, probably after each task) as time goes by.......**\*\*\*\***
+**\*\***....... What we both learned in the course of the tasks goes here, we will keep updating (this part individually, probably after each task) as time goes by .......**\*\*\*\***
 
 ### Continued development
 
@@ -166,7 +171,9 @@ What we hope to do after completing this tasks, eg, implementing more of the fun
 
 [Geeks For Geeks](https://geeksforgeeks.org) - Geeks for geeks, a great place for well detailed technical articles encompassing several programming languages, this helped in getting several informations on how some of the functions works.
 
-**\*\***....... (we can add more resources we might use to update the readme e.g, adding the official unix docs where those manual pages we see on terminal can be gotten online) .......**\*\*\*\***
+[Youtube Channels](https://youtube.com) - Combinations of several channels and videos was used to aid the completion of this project, I will suggest that anyone wanting to top their developing game, should use Youtube more often.
+
+[Google](https://google.com) - Google was the icing on the cake, as almost everything, started and ended with Google, a timely and accurate search can salvage one hours of debugging problems.
 
 ## Authors
 
@@ -177,4 +184,6 @@ This project was done by:
 
 ## Acknowledgments
 
-**\*\***....... We will put the Acknowledgments here, thank alx for the opportunity and prolly add some one or two things we are grateful for as regarding the completion of this task. .......**\*\*\*\***
+We are both super grateful for the opportunity ALX is offering to young Africans as regards growing the technological atmosphere of the continent, we sure, will keep this flag flying high, ALX to the world.
+
+P.S - Simple shell was not "simple", just "shell" :(
