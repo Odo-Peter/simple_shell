@@ -5,19 +5,19 @@ This is the solution to the simple shell project for ALX low level programming l
 ## Table of contents
 
 - [Overview](#overview)
-  - [The requirements](#the-requirements)
-    - [The challenge](#the-challenge)
-      - [Authorized functions and macros](#authorized-functions-and-macros)
-        - [Functions and descriptions](#functions-and-descriptions)
-	  - [Compilation](#compilation)
-	    - [Testing](#testing)
-	    - [Our process](#our-process)
-	      - [Built with](#built-with)
-	        - [What we learned](#what-we-learned)
-		  - [Continued development](#continued-development)
-		    - [Useful resources](#useful-resources)
-		    - [Authors](#authors)
-		    - [Acknowledgments](#acknowledgments)
+- [The requirements](#the-requirements)
+  	- [The challenge](#the-challenge)
+  	- [Authorized functions and macros](#authorized-functions-and-macros)
+  	- [Functions and descriptions](#functions-and-descriptions)
+  	- [Compilation](#compilation)	
+  	- [Testing](#testing)	   
+- [Our process](#our-process)
+	- [Built with](#built-with)
+	- [What we learned](#what-we-learned)
+	- [Continued development](#continued-development)
+	- [Useful resources](#useful-resources)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -41,21 +41,21 @@ The general requirements for the project tasks were:
 The project was to achieve the following:
 
 - Write a simple UNIX command interpreter.
-  - All files should pass betty linter test.
-    - Write a UNIX command line interpreter, the shell should do the following:
-        - Display a prompt and wait for a user to type a command.
-	    - The prompt is displayed again each time a command has been executed.
-	        - The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
-		    - If an executable cannot be found, print an error message and display the prompt again.
-		        - Handle errors.
-			    - The “end of file” condition should be handled `ctrl+D`
-			      - Handle command lines with arguments.
-			        - Handle the `PATH`
-				  - `fork` must not be called if the command doesn’t exist.
-				    - Implement the exit built-in, that exits the shell.
-				        - Usage: `exit`
-					    - Any argument to the built-in `exit` must not be handled.
-					      - Implement the `env` built-in, that prints the current environment.
+ - All files should pass betty linter test.
+ - Write a UNIX command line interpreter, the shell should do the following:
+ 	- Display a prompt and wait for a user to type a command.
+ 	- The prompt is displayed again each time a command has been executed.
+	- The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
+	- If an executable cannot be found, print an error message and display the prompt again.
+	- Handle errors.
+	- The “end of file” condition should be handled `ctrl+D`
+	- Handle command lines with arguments.	
+	- Handle the `PATH`
+	- `fork` must not be called if the command doesn’t exist.	
+- Implement the exit built-in, that exits the shell.			  
+	- Usage: `exit`
+	- Any argument to the built-in `exit` must not be handled.	   
+	- Implement the `env` built-in, that prints the current environment.
 
 ### Authorized functions and macros
 
