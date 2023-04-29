@@ -154,12 +154,12 @@ The simple shell project, was built with C language.
 
 ### What we learned
 
-**\*\***....... What we both learned in the course of the tasks goes here, we will keep updating (this part individually, probably after each task) as time goes by .......**\*\*\*\***
+**\*\***....... We learned many useful things, at first we thought finally we've gotten a hang of these only for it to be shown to us after the checker was released that we were mostly off about a lot of codes; luckily enough for us we made up with the second chance we were given and got it together to a T, doing hard things truly doesn't come easy but hen the hardness keeps coming, we fall back onto a single word "Tataka" .......**\*\*\*\***
 
 ### Continued development
 
 What we hope to do after completing this tasks, eg, implementing more of the functionalities of a regular UNIX shell, etc...
-**\*\***....... (We will also update this with suitable ideas in due time) .......**\*\*\*\***
+**\*\***.......We hope to implement this new set of skills into our future projects, hopefully both of us get to team up and work on more projects as time goes forward but we both individually would apply the new set of skills in our fields .......**\*\*\*\***
 
 ### Useful resources
 
